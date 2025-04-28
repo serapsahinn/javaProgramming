@@ -10,7 +10,7 @@ public class chapter4
         /*
         Scanner input = new Scanner(System.in);
         //   r al
-        System.out.print("Enter the length from the center to a vertex: ");
+        System.out.print("Merkezden bir tepe noktasına kadar olan uzunluğu girin: ");
         double r = input.nextDouble();
         // alan begnenın(s = 2r * sin(π/5))
         double s = 2 * r * Math.sin(Math.PI / 5);
@@ -23,13 +23,12 @@ public class chapter4
         Scanner input = new Scanner(System.in);
         // Kullanıcıdan bir hex karakter girmesini iste
         System.out.print("Enter a hex digit (0-9, A-F): ");
-        String hex = input.next().toUpperCase(); // Küçük harf girdilerini de desteklemek için büyük harfe çevir
+        String hex = input.next().toUpperCase(); // Küçük harf girdilerini de büyük harfe çevir
 
         // Girilen değerin geçerli olup olmadığını kontrol et
         if (hex.length() == 1 && ((hex.charAt(0) >= '0' && hex.charAt(0) <= '9') || (hex.charAt(0) >= 'A' && hex.charAt(0) <= 'F'))) {
             // Hexadecimal karakteri integer'a çevir
             int decimalValue = Integer.parseInt(hex, 16);
-
             // Binary'ye çevir ve ekrana yazdır
             String binaryValue = Integer.toBinaryString(decimalValue);
             System.out.println( binaryValue);
@@ -41,7 +40,6 @@ public class chapter4
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a letter: ");
         char letter = input.next().toLowerCase().charAt(0);  // Küçük harf olarak al
-
         //  unlu veya ünsüz kontrolü
         if ((letter >= 'a' && letter <= 'z')) {  // Harf olup olmadığını kontrol et
             if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') {
@@ -55,9 +53,8 @@ public class chapter4
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a letter grade (A, B, C, D, F): ");
         char grade = input.next().toUpperCase().charAt(0);  // Küçük harf girilse bile büyük harfe dönüştürülür
-
         // Harf notunu sayısal değere çevir
-        int numericValue = 0; // Varsayılan değer
+        int numericValue = 0;
         switch (grade) {
             case 'A':
                 numericValue = 4;
@@ -75,18 +72,13 @@ public class chapter4
                 numericValue = 0;
                 break;
             default:
-                System.out.println("Invalid input! Please enter a valid letter grade.");
+                System.out.println("Lütfen geçerli bir harf notu girin");
                 return;
         }
-         System.out.println("The numeric value for grade " + grade + " is " + numericValue + ".");
+         System.out.println( grade + " is " + numericValue + ".");
 
 
  */
 
-        Scanner input = new Scanner(System.in);
-        System.out.print("Bir karakter girin: "); String
-                s = input.nextLine();
-        char ch = s.charAt(0);
-        System.out.println("Girilen karakter "+ ch);
     }
 }

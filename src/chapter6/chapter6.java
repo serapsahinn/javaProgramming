@@ -36,11 +36,10 @@ public class chapter6
                 System.out.printf("%6d", getPentagonalNumber(i));
                 count++;
                 if (count % 10 == 0) {
-                    System.out.println(); // Her 10 sayıda bir alt satıra geç
+                    System.out.println();
                 }
             }
         }
-
         public static int getPentagonalNumber(int n) {
             return n * (3 * n - 1) / 2;
         }
@@ -54,8 +53,7 @@ public class chapter6
             Scanner input = new Scanner(System.in);
             System.out.print("Enter an integer: ");
             long number = input.nextLong();
-
-            System.out.println("The sum of digits: " + sumDigits(number));
+            System.out.println( sumDigits(number));
         }
 
         public static int sumDigits(long n) {
@@ -71,17 +69,15 @@ public class chapter6
      */
 
  /*
-
     public class PalindromeCheck {
         public static void main(String[] args) {
             Scanner input = new Scanner(System.in);
             System.out.print("Enter an integer: ");
             int number = input.nextInt();
-
             if (isPalindrome(number)) {
-                System.out.println(number + " is a palindrome.");
+                System.out.println(number );
             } else {
-                System.out.println(number + " is not a palindrome.");
+                System.out.println(number);
             }
         }
 
@@ -93,7 +89,6 @@ public class chapter6
             }
             return reverse;
         }
-
         public static boolean isPalindrome(int number) {
             return number == reverse(number);
         }
@@ -107,11 +102,9 @@ public class chapter6
             Scanner input = new Scanner(System.in);
             System.out.print("Enter an integer: ");
             int number = input.nextInt();
-
             System.out.print("Reversed number: ");
             reverse(number);
         }
-
         public static void reverse(int number) {
             while (number != 0) {
                 System.out.print(number % 10); // Son basamağı yazdır
@@ -138,30 +131,24 @@ public class chapter6
 
         public static void displaySortedNumbers(double num1, double num2, double num3) {
             double temp;
-
             if (num1 > num2) {
                 temp = num1;
                 num1 = num2;
                 num2 = temp;
             }
-
             if (num2 > num3) {
                 temp = num2;
                 num2 = num3;
                 num3 = temp;
             }
-
             if (num1 > num2) {
                 temp = num1;
                 num1 = num2;
                 num2 = temp;
             }
-
             System.out.println("Sorted numbers: " + num1 + " " + num2 + " " + num3);
         }
     }
-
-
      */
  /*
 
@@ -176,11 +163,9 @@ public class chapter6
 
         public static void displayPattern(int n) {
             for (int row = 1; row <= n; row++) {
-
                 for (int space = 1; space <= n - row; space++) {
                     System.out.print("  ");
                 }
-                
                 for (int num = row; num >= 1; num--) {
                     System.out.print(num + " ");
                 }

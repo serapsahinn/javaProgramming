@@ -10,15 +10,13 @@ public class chapter7
     public class AssignGrades {
         public static void main(String[] args) {
             Scanner input = new Scanner(System.in);
-
-            // 1. Öğrenci sayısını al
+            // 1. Öğrenci sayısı
             System.out.print("Enter the number of students: ");
             int numberOfStudents = input.nextInt();
-
             int[] scores = new int[numberOfStudents]; // Dizi oluştur
-            int best = 0; // En yüksek not
+            int best = 0;
 
-            // 2. Bütün notları al ve en yüksek notu bul
+            // 2. Bütün notlar ve en yüksek notu bul
             System.out.print("Enter " + numberOfStudents + " scores: ");
             for (int i = 0; i < numberOfStudents; i++) {
                 scores[i] = input.nextInt();
@@ -30,7 +28,6 @@ public class chapter7
             // 3. Notları yazdır
             for (int i = 0; i < numberOfStudents; i++) {
                 char grade;
-
                 if (scores[i] >= best - 10)
                     grade = 'A';
                 else if (scores[i] >= best - 20)
@@ -41,13 +38,10 @@ public class chapter7
                     grade = 'D';
                 else
                     grade = 'F';
-
                 System.out.println("Student " + i + " score is " + scores[i] + " and grade is " + grade);
             }
         }
     }
-
-
      */
 
   /*
@@ -56,13 +50,11 @@ public class chapter7
         public static void main(String[] args) {
             Scanner input = new Scanner(System.in);
             int[] numbers = new int[10];
-
             // 10 sayı al
             System.out.print("Enter 10 integers: ");
             for (int i = 0; i < 10; i++) {
                 numbers[i] = input.nextInt();
             }
-
             // Ters sırayla yazdır
             System.out.print("Numbers in reverse order: ");
             for (int i = 9; i >= 0; i--) {
@@ -73,14 +65,11 @@ public class chapter7
 
    */
    /*
-
     public class CountOccurrences {
         public static void main(String[] args) {
             Scanner input = new Scanner(System.in);
             int[] counts = new int[101]; // 0–100 arası (0 kullanılmaz)
-
-            System.out.println("Enter numbers between 1 and 100 (end with 0):");
-
+            System.out.println("1 ile 100 arasında sayılar girin");
             while (true) {
                 int number = input.nextInt();
 
@@ -90,7 +79,6 @@ public class chapter7
                     counts[number]++;
                 }
             }
-
             // Sayıların tekrarını yazdır
             for (int i = 1; i <= 100; i++) {
                 if (counts[i] > 0) {
@@ -112,7 +100,7 @@ public class chapter7
             int count = 0;
             double total = 0;
 
-            System.out.println("Enter scores (negative number to end):");
+            System.out.println("scores girin ");
 
             // Giriş al
             while (true) {
@@ -126,7 +114,6 @@ public class chapter7
             double average = total / count;
             int aboveOrEqual = 0;
             int below = 0;
-
             // Ortalama ile karşılaştır
             for (int i = 0; i < count; i++) {
                 if (scores[i] >= average)
@@ -134,7 +121,6 @@ public class chapter7
                 else
                     below++;
             }
-
             System.out.println("Average is: " + average);
             System.out.println("Number of scores >= average: " + aboveOrEqual);
             System.out.println("Number of scores < average: " + below);
@@ -162,15 +148,12 @@ public class chapter7
                         break;
                     }
                 }
-
                 // Yeni ise diziye ekle
                 if (isNew) {
                     distinct[count] = num;
                     count++;
                 }
             }
-
-            // Sonuçları yazdır
             System.out.println("The number of distinct numbers is " + count);
             System.out.print("The distinct numbers are: ");
             for (int i = 0; i < count; i++) {

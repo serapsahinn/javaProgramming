@@ -42,15 +42,14 @@ public class chapter {
         Scanner input = new Scanner(System.in);
         int guess = -1;
         while (guess != number) {
-            // Prompt the user to guess the number
             System.out.print("sayı gırınız: ");
             guess = input.nextInt();
             if (guess == number)
-                System.out.println("Yes, the number is " + number);
+                System.out.println("dogru" + number);
             else if (guess > number)
-                System.out.println("Your guess is too high");
+                System.out.println("tahmin çok yüksek ");
             else
-                System.out.println("Your guess is too low");
+                System.out.println("tahmininiz çok düşük");
         }
  */
 /*
@@ -74,7 +73,6 @@ public class chapter {
         int number1 = (int)(Math.random() * 10);
         int number2 = (int)(Math.random() * 10);
         int answer = -1;
-
         while (answer != number1 + number2) {
             System.out.print(number1 + " + " + number2 + " = ? ");
             answer = input.nextInt();
@@ -82,7 +80,6 @@ public class chapter {
                 System.out.println("Yanlış cevap, tekrar deneyin.");
             }
         }
-
         System.out.println("Tebrikler! Doğru cevap.");
         input.close();
     }
@@ -112,32 +109,18 @@ public class chapter {
 
         Scanner input = new Scanner(System.in);
         int number, max;
-
         number = input.nextInt();
         max = number;
-
         do {
             number = input.nextInt();
             if (number > max)
                 max = number;
         } while (number != 0);
-
         System.out.println("max is " + max);
         System.out.println("number " + number);
     }
 
  */
-
-        
-
-
-
-
-
-
-
-
-
 
 
     }

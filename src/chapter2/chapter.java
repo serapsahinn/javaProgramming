@@ -71,18 +71,10 @@ public class chapter
 
         /* double result =  Math.pow(2, 35);
         System.out.println("2^35: " + result);*/
-
-        //m ve r'nin tam sayı olduğunu varsayalım. mr2 için bir Java ifadesi yazın
-        // kayan noktalı bir sonuç elde etmek için.
-
        // int m= 5;
         //int r=4;
-
         //double result = Math.pow(r,2);
         //System.out.println("mr^2"+m*result);
-
-
-
 
 
     }

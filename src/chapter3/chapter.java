@@ -10,10 +10,9 @@ public class chapter
              /*   int number1 = (int)(System.currentTimeMillis() % 10);
                 int number2 = (int)(System.currentTimeMillis() / 7 % 10);
                 Scanner input = new Scanner(System.in);
-                System.out.print("What is " + number1 + " + " + number2 + "? ");
+                System.out.print( number1 + " + " + number2 + "? ");
                 int answer = input.nextInt();
-                System.out.println("False. The correct answer is " + (number1 + number2));
-
+                System.out.println( (number1 + number2));
 
                 Scanner ınput = new Scanner(System.in);
                 System.out.print("Bir tam sayı girin: ");
@@ -62,7 +61,6 @@ public class chapter
 
         System.out.println((x < y && y < z) ? "sorted" : "not sorted");
 
-
          */
 
 
@@ -77,8 +75,6 @@ public class chapter
             number1 = number2;
             number2 = temp;
         }
-
-
         Scanner input = new Scanner(System.in);
         System.out.print("" + number1 + " - " + number2 + " kaçtır? ");
         int cevap = input.nextInt();
@@ -95,8 +91,6 @@ public class chapter
 /*
 // artan yıl
         Scanner input = new Scanner(System.in);
-
-
         System.out.print("Bir yıl girin: ");
         int year = input.nextInt();
 
@@ -134,20 +128,15 @@ public class chapter
         /*
         // denklem koklerı bulma
         Scanner input = new Scanner(System.in);
-
         // abc degerlerı
         System.out.print("a değerini girin: ");
         double a = input.nextDouble();
-
         System.out.print("b değerini girin: ");
         double b = input.nextDouble();
-
         System.out.print("c değerini girin: ");
         double c = input.nextDouble();
-
         // Diskriminant hesaplama
         double discriminant = Math.pow(b, 2) - 4 * a * c;
-
         if (discriminant > 0) {
             double r1 = (-b + Math.pow(discriminant, 0.5)) / (2 * a);
             double r2 = (-b - Math.pow(discriminant, 0.5)) / (2 * a);
@@ -166,16 +155,12 @@ public class chapter
         int number1 = (int)(Math.random() * 10);
         int number2 = (int)(Math.random() * 10);
         int number3 = (int)(Math.random() * 10);
-
         System.out.print(number1 + " + " + number2 + " + " + number3 + " = Kaçtır? ");
-
         Scanner input = new Scanner(System.in);
         int answer = input.nextInt();
-
         int correctAnswer = number1 + number2 + number3;
-
         if (answer == correctAnswer) {
-            System.out.println("Tebrikler! Doğru cevap.");
+            System.out.println("Tebrikler Doğru cevap.");
         } else {
             System.out.println("Maalesef yanlış cevap. Doğru cevap: " + correctAnswer);
         }
@@ -196,9 +181,7 @@ public class chapter
         double e = input.nextDouble();
         System.out.print("f değerini girin: ");
         double f = input.nextDouble();
-
         double determinant = a * d - b * c;
-
         if (determinant == 0) {
             System.out.println("Denklemin çözümü yok.");
         } else {
@@ -214,19 +197,15 @@ public class chapter
         // Rastgele x ve y koordinatları üretme
         int x = (int)(Math.random() * width) - width / 2;
         int y = (int)(Math.random() * height) - height / 2;
-
         System.out.println("Rastgele nokta: (" + x + ", " + y + ")");
         */
-
         // ucgenın cevresı
         /*
         Scanner input = new Scanner(System.in);
         System.out.print("Birinci kenarı girin: ");
         double side1 = input.nextDouble();
-
         System.out.print("İkinci kenarı girin: ");
         double side2 = input.nextDouble();
-
         System.out.print("Üçüncü kenarı girin: ");
         double side3 = input.nextDouble();
 
@@ -237,13 +216,10 @@ public class chapter
         } else {
             System.out.println("Geçersiz giriş: Bu kenarlarla üçgen oluşturulamaz.");
         }
-
          */
 
         //(Rastgele ay) 1 ile 12 arasında rastgele bir tamsayı üreten ve buna göre 1, 2, ..., 12 sayıları için
         //Ocak, Şubat, ..., Aralık İngilizce ay adlarını görüntüleyen bir program yazın.
-       // int number1 = (int)(Math.random() * 10);
-
         /*
         int num = (int)(Math.random() * 12);
         switch (num)
@@ -269,7 +245,6 @@ public class chapter
         System.out.println("bir sayı giriniz : ");
         Scanner input = new Scanner(System.in);
         int num = input.nextInt();
-
         System.out.println("sonrakı gun için bir sayı gırınız");
         int num2= input.nextInt();
         int  gun = (num + num2) % 7;
@@ -310,7 +285,6 @@ public class chapter
 
          */
 
-
 /*
         System.out.println("sayı gırınız ");
         Scanner input = new Scanner(System.in);
@@ -336,9 +310,6 @@ public class chapter
         }
 
  */
-
-
-
 
     }
 }

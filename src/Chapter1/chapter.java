@@ -62,8 +62,6 @@ public class chapter
         //8 Yarıçapı 5.5 olan bir dairenin çevre ve alanını
         double yaricap = 5.5;
         double pi = Math.PI;
-
-        // cevre ve alan
         double cevre = 2 * yaricap * pi;
         double alan = yaricap * yaricap * pi;
 
@@ -91,23 +89,19 @@ public class chapter
         double kilometre = 14.0;
         double dakika = 45.0;
         double saniye = 30.0;
-        double kmToMile = 1.6; // 1 mil = 1.6 km
+        double kmToMile = 1.6; // 1 mil = 1.6 km imiş
 
-        // zaman ı saat cınsıne cevrılıyo
+        // zamanı saate cevrılıyor
         double toplamSaat = (dakika + saniye/60) / 60;
-
         // km mıl e
         double mil = kilometre / kmToMile;
-
         // Ortalama hız: (mil/saat)
         double ortalamaHiz = mil / toplamSaat;
-
         System.out.println("Ortalama Hız: " + String.format("%.2f", ortalamaHiz) + " mil/saat");
 
         //11
         // Başlangıç nüfusu
         double nüfüs = 312032486;
-
         // sn cınsınden yıllık degısımmler
         double  saniyeYılIçinde = 365.0 * 24 * 60 * 60;
         double YılBaşınaDoğum = saniyeYılIçinde / 7;
@@ -118,23 +112,19 @@ public class chapter
         for (int year = 1; year <= 5; year++) {
             nüfüs += YılBaşınaDoğum + YılBaşınaGöçmen -  YılBaşınaÖlüm;
             System.out.printf(" yıl nüfusu:", year, nüfüs);
-
         }
 
         //12
         // mesefeyı km cınsıne cevırme
         double miles = 24;
         double kilometers = miles * 1.6;
-
         //zaman saat e cevırme
         double hours = 1;
         double minutes = 40.0 / 60;    // 40 dakikayı saate çevirme
         double seconds = 35.0 / 3600;  // 35 saniyeyi saate çevirme
         double totalsaat = hours + minutes + seconds;
-
         // ortalama hız (km/saat)
         double ortalama= kilometers / totalsaat;
-
         System.out.printf("Ortalama hız:  kilometre/saat",ortalama);
 
         //13
@@ -144,21 +134,17 @@ public class chapter
         double d = 0.55;
         double e = 44.5;
         double f = 5.9;
-
         // Determinant (ad - bc) hesaplama
         double determinant = a * d - b * c;
-
         // x ve y değerlerini hesapkama
         double x = (e * d - b * f) / determinant;
         double y = (a * f - e * c) / determinant;
-
         // Sonuçları yazdırma
         if (determinant == 0) {
             System.out.println("Denklem sisteminin çözümü yok (determinant = 0)");
         } else {
             System.out.printf("x", x);
             System.out.printf("y ", y);
-
     }}
 
 }
