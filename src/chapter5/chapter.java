@@ -121,8 +121,21 @@ public class chapter {
     }
 
  */
+        int sayac = 0;
+        System.out.println("101 ile 2100 arasındaki artık yıllar:");
 
-
+        for (int yil = 101; yil <= 2100; yil++) {
+            // artık yıl kontrolu
+            if ((yil % 400 == 0) || (yil % 4 == 0 && yil % 100 != 0)) {
+                System.out.print(yil + " ");
+                sayac++;
+                // her on yılda bbır satır atla
+                if (sayac % 10 == 0) {
+                    System.out.println();
+                }
+            }
+        }
+        System.out.println("Toplam artık yıl sayısı  "  + sayac);
     }
 
 }

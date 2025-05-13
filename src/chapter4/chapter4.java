@@ -79,6 +79,41 @@ public class chapter4
 
 
  */
+        /*
+        Scanner input = new Scanner(System.in);
+        System.out.print("Yılı girin: ");
+        int yil = input.nextInt();
+
+        System.out.print("Ayı gırın  ");
+        String ay = input.next();
+
+        int gunSayisi;
+
+        switch (ay) {
+            case "Ocak": gunSayisi = 31; break;
+            case "subat":
+                if ((yil % 400 == 0) || (yil % 4 == 0 && yil % 100 != 0)) {
+                    gunSayisi = 29;
+                } else {
+                    gunSayisi = 28;
+                }
+                break;
+            case "mart": gunSayisi = 31; break;
+            case "nisan": gunSayisi = 30; break;
+            case "mayıs": gunSayisi = 31; break;
+            case "hazıran": gunSayisi = 30; break;
+            case "temmuz": gunSayisi = 31; break;
+            case "Agustos": gunSayisi = 31; break;
+            case "eylül": gunSayisi = 30; break;
+            case "ekim": gunSayisi = 31; break;
+            case "kasım": gunSayisi = 30; break;
+            case "aralık20": gunSayisi = 31; break;
+            default:
+                System.out.println("Geçersiz ay girişi!");
+                return;
+        }
+        System.out.println(ay + " " + yil + " ayı " + gunSayisi + " gün içerir.");
+         */
 
     }
 }

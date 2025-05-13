@@ -1,9 +1,14 @@
 package chapter6;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
 import java.util.Scanner;
 
 public class chapter6
 {
+
+    public static void main(String[] args) {
    /* public static void main(String[] args) {
         System.out.print("The grade is ");
         printGrade(78.5);
@@ -173,11 +178,23 @@ public class chapter6
             }
         }
     }
-
-
-
   */
+        // LocalDateTime sınıfını kullanıyoruz
+        LocalDateTime currentDateTime = LocalDateTime.now();
+        // Tarih ve saati formatlamak için
+        DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
 
+        // formatlanmıs tarıh bılgılerı
+        String formattedDate = currentDateTime.format(dateFormatter);
+        String formattedTime = currentDateTime.format(timeFormatter);
 
+        System.out.println(formattedDate);
+        System.out.println(formattedTime);
+    }
 
 }
+
+
+
+

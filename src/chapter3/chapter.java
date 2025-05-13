@@ -1,5 +1,6 @@
 package chapter3;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class chapter
@@ -310,6 +311,29 @@ public class chapter
         }
 
  */
+
+        /*
+        //  1 = As, 11 = Vale, 12 = Kız, 13 = Papaz
+        String[] degerler = {
+                "As", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Vale", "Kız", "Papaz"
+        };
+
+        // Kart türleri: Maça, Karo, Kupa, Sinek
+        String[] turler = {
+                "Maça", "Karo", "Kupa", "Sinek"
+        };
+        //ragele bır sayı
+        Random rastgele = new Random();
+        int kartNumarasi = rastgele.nextInt(52);
+
+        // kart deger ve turu
+        int degerIndex = kartNumarasi % 13;
+        int turIndex = kartNumarasi / 13;
+
+        String kartDegeri = degerler[degerIndex];
+        String kartTuru = turler[turIndex];
+        System.out.println("Çektiğiniz kart: " + kartDegeri + " - " + kartTuru);
+         */
 
     }
 }

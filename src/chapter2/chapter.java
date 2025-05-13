@@ -76,6 +76,58 @@ public class chapter
         //double result = Math.pow(r,2);
         //System.out.println("mr^2"+m*result);
 
+        /*
+        Scanner input = new Scanner(System.in);
+        System.out.print("para miktarını kuruş cinsinden girin ");
+        int toplamKurus = input.nextInt();
+
+        int lira = toplamKurus / 100;
+        int kalanKurus = toplamKurus % 100;
+
+        int elliKurus = kalanKurus / 50;
+        kalanKurus = kalanKurus % 50;
+
+        int yirmiBesKurus = kalanKurus / 25;
+        kalanKurus = kalanKurus % 25;
+
+        int onKurus = kalanKurus / 10;
+        kalanKurus = kalanKurus % 10;
+
+        int besKurus = kalanKurus / 5;
+        kalanKurus = kalanKurus % 5;
+
+        int birKurus = kalanKurus;
+
+        System.out.println("Toplam: " + lira + " TL " + (toplamKurus % 100) + " kuruş");
+        System.out.println("Banknot ve bozuk para dağılımı:");
+        System.out.println("Lira: " + lira);
+        System.out.println("50 kuruş: " + elliKurus);
+        System.out.println("25 kuruş: " + yirmiBesKurus);
+        System.out.println("10 kuruş: " + onKurus);
+        System.out.println("5 kuruş: " + besKurus);
+        System.out.println("1 kuruş: " + birKurus);
+         */
+
+        /*
+        Scanner input = new Scanner(System.in);
+        System.out.print("Gidilecek mesafeyi girin ");
+        double mesafe = input.nextDouble();
+
+        System.out.print("Arabanın yakıt tüketimini girin ");
+        double kmBasinaTuketim = input.nextDouble();
+
+        System.out.print("Benzin fiyatını girin");
+        double litreFiyat = input.nextDouble();
+
+        //toplam maliyet
+        double toplamLitre = mesafe * kmBasinaTuketim;
+        double toplamMaliyet = toplamLitre * litreFiyat;
+        System.out.printf("Yolculuğun toplam maliyeti: %.2f TL", toplamMaliyet);
+
+         */
+
+
+
 
     }
 
