@@ -1,5 +1,6 @@
 package chapter3;
 
+import java.awt.*;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -7,7 +8,6 @@ public class chapter
 {
     public static void main(String[] args)
     {
-
              /*   int number1 = (int)(System.currentTimeMillis() % 10);
                 int number2 = (int)(System.currentTimeMillis() / 7 % 10);
                 Scanner input = new Scanner(System.in);
@@ -26,7 +26,6 @@ public class chapter
                 }
 
               */
-
 /*
         System.out.println("sayı gırınız ");
         Scanner input= new Scanner(System.in);
@@ -50,8 +49,6 @@ public class chapter
         {
             System.out.println("kazandınız odul 100000");
         }
-
-
          */
 
         /*
@@ -63,10 +60,6 @@ public class chapter
         System.out.println((x < y && y < z) ? "sorted" : "not sorted");
 
          */
-
-
-
-
         //rastgele sayı uretme ogrencının cevabı kontrol etme
       /*  int number1 = (int)(Math.random() * 10);
         int number2 = (int)(Math.random() * 10);
@@ -125,48 +118,6 @@ public class chapter
         }
 
          */
-
-        /*
-        // denklem koklerı bulma
-        Scanner input = new Scanner(System.in);
-        // abc degerlerı
-        System.out.print("a değerini girin: ");
-        double a = input.nextDouble();
-        System.out.print("b değerini girin: ");
-        double b = input.nextDouble();
-        System.out.print("c değerini girin: ");
-        double c = input.nextDouble();
-        // Diskriminant hesaplama
-        double discriminant = Math.pow(b, 2) - 4 * a * c;
-        if (discriminant > 0) {
-            double r1 = (-b + Math.pow(discriminant, 0.5)) / (2 * a);
-            double r2 = (-b - Math.pow(discriminant, 0.5)) / (2 * a);
-            System.out.println("Denklemin iki gerçek kökü var: r1 = " + r1 + " ve r2 = " + r2);
-        } else if (discriminant == 0) {
-            double r = -b / (2 * a);
-            System.out.println("Denklemin bir gerçek kökü var: r = " + r);
-        } else {
-            System.out.println("Denklemin gerçek kökü yok.");
-        }
-
-         */
-
-        /*
-        // rastgele sayı
-        int number1 = (int)(Math.random() * 10);
-        int number2 = (int)(Math.random() * 10);
-        int number3 = (int)(Math.random() * 10);
-        System.out.print(number1 + " + " + number2 + " + " + number3 + " = Kaçtır? ");
-        Scanner input = new Scanner(System.in);
-        int answer = input.nextInt();
-        int correctAnswer = number1 + number2 + number3;
-        if (answer == correctAnswer) {
-            System.out.println("Tebrikler Doğru cevap.");
-        } else {
-            System.out.println("Maalesef yanlış cevap. Doğru cevap: " + correctAnswer);
-        }
-         */
-
         /*
         // 2x2 doğrusal denklemleri Cramer kuralına gore
         Scanner input = new Scanner(System.in);
@@ -334,6 +285,81 @@ public class chapter
         String kartTuru = turler[turIndex];
         System.out.println("Çektiğiniz kart: " + kartDegeri + " - " + kartTuru);
          */
+
+        /*
+        //Denkelemın kokunu bulma
+        Scanner scanner= new Scanner(System.in);
+        System.out.print("a değerini giriniz : ");
+        double a = scanner.nextDouble();
+
+        System.out.print("b degerini girinzi : ");
+        double b= scanner.nextDouble();
+        System.out.print(" c degeriini giriniz : ");
+        double c =scanner.nextDouble();
+
+        double discriminant=Math.pow(b,2)-4*a*c;
+        if (discriminant > 0)
+        {
+            double r1=(-b+Math.sqrt(Math.pow(b,2)-4*a*c))/2*a;
+            double r2 =-(-b-Math.sqrt(Math.pow(b,2)-4*a*c))/2*a;
+            System.out.println("denklemın iki kökü var : " +"r1  "+ r1 + "  r2  "+ r2);
+        } else if (discriminant == 0)
+        {
+            double r = -b / (2 * a);
+            System.out.println("denklemın cıft katlı koku vardır : "+ r);
+        }else
+        {
+            System.out.println("denklemın koku yok ");
+        }
+        scanner.close();
+
+         */
+        /*
+        // rastgele sayı üretme ve dogru yanlıs kontrol
+        int num1= (int)(Math.random() * 10);
+        int num2 =(int)(Math.random() * 10);
+        int num3 =(int)(Math.random() *10);
+
+        int snc= num1+ num2+num3;
+        System.out.print("Sayıların toplamı giriniz : ");
+         Scanner scanner= new Scanner(System.in);
+        int k1=scanner.nextInt();
+        if (k1==snc)
+        {
+            System.out.println("toplam dogru : ");
+        }else
+        {
+            System.out.println("yanlış gerçek toplam : "+ snc );
+        }
+         */
+        //cramer kuralına gore cozum
+        Scanner scanner= new Scanner(System.in);
+        System.out.print("sayı giriniz :");
+        int a= scanner.nextInt();
+        System.out.print("sayı giriniz :");
+        int b= scanner.nextInt();
+        System.out.print("sayı giriniz :");
+        int c= scanner.nextInt();
+        System.out.print("sayı giriniz :");
+        int d= scanner.nextInt();
+        System.out.print("sayı giriniz :");
+        int e= scanner.nextInt();
+        System.out.print("sayı giriniz :");
+        int f= scanner.nextInt();
+
+        int snc=  (a*d - b*c);
+        if (snc==0)
+        {
+            System.out.println("denklemın cozumu yok ");
+        }else
+        {
+            System.out.println("denklemın çözümü : ");
+
+            System.out.println("x:" +(e*d - b*f) / snc);
+            System.out.println("y:"+  (a*f - e*c) / snc);
+        }
+
+
 
     }
 }

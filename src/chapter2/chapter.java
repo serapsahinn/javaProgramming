@@ -125,6 +125,43 @@ public class chapter
         System.out.printf("Yolculuğun toplam maliyeti: %.2f TL", toplamMaliyet);
 
          */
+        /*
+//(Finansal uygulama: gelecekteki yatırım değerini hesaplama)
+        Scanner input = new Scanner(System.in);
+        System.out.print("YATIRIM TUTARI GİRİNİZ ");
+        double yatirimTutari = input.nextDouble();
+
+        System.out.print("Yıllık faiz oranını yüzde olarak girin : ");
+        double faizoOrani =input.nextDouble();
+
+        System.out.print("Yıl sayısını girin : ");
+        double yılSayisi = input.nextDouble();
+
+        double aylikFaizOrani = faizoOrani / 100 / 12;
+
+        double gelecektekiYatirim = yatirimTutari * Math.pow(1 + aylikFaizOrani, yılSayisi * 12);
+        System.out.println(gelecektekiYatirim);
+         */
+
+        //(Finansal uygulama: faiz hesaplama) Bakiyeyi ve yıllık faizi biliyorsanız
+        //yüzde faiz oranını kullanarak, aşağıdaki formülü kullanarak bir sonraki aylık ödemenin faizini hesaplayabilirsiniz:
+        //faiz = bakiye * (yıllık faiz oranı/1200)
+        //Bakiyeyi ve yıllık faiz oranını okuyan bir program yazın ve
+        //bir sonraki ay için faiz oranını gösterir. İşte örnek bir çalışma:
+        //Bakiye ve faiz oranını girin (örneğin, %3 için 3): 1000 3.5
+        //Faiz oranı 2,91667
+
+        Scanner input= new Scanner(System.in);
+        System.out.print("bakiyeyi giriniz : ");
+        double bakiye=input.nextDouble();
+
+        System.out.print(" yıllık faiz oranı : ");
+        double yillikFaizOranı=input.nextDouble();
+
+        double aylikFaziOranı=yillikFaizOranı/1200;
+
+        double faiz= bakiye*aylikFaziOranı;
+        System.out.print("bir sonraki ay faiz hesaplama "+ faiz);
 
 
 

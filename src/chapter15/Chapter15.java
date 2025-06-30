@@ -19,8 +19,6 @@ import javafx.scene.control.Button;
 import javafx.scene.input.KeyCode;
 import javafx.scene.shape.Rectangle;
 
-import java.awt.*;
-
 
 public class Chapter15 extends Application {
 

@@ -1,12 +1,31 @@
 package chapter4;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class chapter4
 {
     public static void main(String[] args) {
+       /*
+       // d = yarıçap * arccos(sin(x1) * sin(x2) + cos(x1) * cos(x2) * cos(y1 - y2))
+        System.out.println("birinci nokta enlem boylam : ");
+        Scanner input =new Scanner(System.in);
+        double x1= input.nextInt();
+        double y1= input.nextInt();
+        System.out.println("ikinci nokta enlem boylam gırınız : " );
+        double x2= input.nextInt();
+        double y2 = input.nextInt();
+        double r= 6371.01;
 
+         x1= Math.toRadians(x1);
+         y1=Math.toRadians(y1);
+         x2= Math.toRadians(x2);
+         y2=Math.toRadians(y2);
 
+         double d= r*Math.acos(Math.sin(x1)*Math.sin(x2)+Math.cos(y1)+Math.cos(y2)*Math.cos(y1-y2));
+        System.out.println(d);
+
+        */
         /*
         Scanner input = new Scanner(System.in);
         //   r al
@@ -72,7 +91,7 @@ public class chapter4
                 numericValue = 0;
                 break;
             default:
-                System.out.println("Lütfen geçerli bir harf notu girin");
+                System.out.println("Lütfen geçerli bir harf notu giriniz");
                 return;
         }
          System.out.println( grade + " is " + numericValue + ".");
@@ -114,6 +133,7 @@ public class chapter4
         }
         System.out.println(ay + " " + yil + " ayı " + gunSayisi + " gün içerir.");
          */
+
 
     }
 }
