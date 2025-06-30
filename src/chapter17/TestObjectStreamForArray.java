@@ -13,13 +13,13 @@ public class TestObjectStreamForArray
 
         // DİZİLERİ DOSYAYA YAZ
         try (ObjectOutputStream output = new ObjectOutputStream(new FileOutputStream("array.dat"));) {
-            output.writeObject(numbers);   // int[] dizisini yaz
-            output.writeObject(strings);   // String[] dizisini yaz
+            output.writeObject(numbers);
+            output.writeObject(strings);   
         }
         // DİZİLERİ DOSYADAN OKU
         try (ObjectInputStream input = new ObjectInputStream(new FileInputStream("array.dat"));) {
-            int[] newNumbers = (int[]) (input.readObject());       // cast gerekli
-            String[] newStrings = (String[]) (input.readObject()); // cast gerekli
+            int[] newNumbers = (int[]) (input.readObject());
+            String[] newStrings = (String[]) (input.readObject());
 
             // DİZİLERİ EKRANA YAZ
             for (int i = 0; i < newNumbers.length; i++) {
